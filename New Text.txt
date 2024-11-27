@@ -1,0 +1,113 @@
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+   data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+
+<ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+<li><a class="dropdown-item" href="topics-listing.html">Topics Listing</a></li>
+
+<li><a class="dropdown-item" href="contact.html">Contact Form</a></li>
+</ul>
+</li>
+
+=====================================================================================================
+
+  <section class="ftco-section ftco-no-pb ftco-no-pt">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7"></div>
+        <div class="col-md-5 order-md-last">
+          <div class="login-wrap p-4 p-md-5">
+            <h3 class="mb-4" id="formTitle">Register Now</h3>
+            <!-- Form Structure -->
+            <form action="register.php" method="post" class="signup-form" id="userForm"
+              onsubmit="return validateForm()">
+              <!-- Registration Fields -->
+              <div id="registerFields">
+                <div class="form-group">
+                  <label class="label" for="name">Full Name</label>
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Full Name" required />
+                </div>
+                <div class="form-group">
+                  <label class="label" for="email">Email Address</label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Email Address"
+                    required />
+                </div>
+                <div class="form-group">
+                  <label class="label" for="password">Password</label>
+                  <input id="password" type="password" name="password" class="form-control" placeholder="Password"
+                    required />
+                </div>
+                <div class="form-group">
+                  <label class="label" for="confirm-password">Confirm Password</label>
+                  <input id="confirm-password" type="password" name="confirm_password" class="form-control"
+                    placeholder="Confirm Password" required />
+                </div>
+              </div>
+
+              <!-- Login Fields (hidden by default) -->
+              <div id="loginFields" style="display: none">
+                <div class="form-group">
+                  <label for="login-name-email">Name or Email</label>
+                  <input type="text" id="login-name-email" class="form-control" placeholder="Name or Email" required />
+                </div>
+                <div class="form-group">
+                  <label for="login-password">Password</label>
+                  <input type="password" id="login-password" class="form-control" placeholder="Password" required />
+                </div>
+              </div>
+
+              <div class="form-group d-flex justify-content-end mt-4">
+                <button type="submit" class="btn btn-primary submit" id="submitButton">
+                  <span class="fa fa-paper-plane"></span> Submit
+                </button>
+              </div>
+            </form>
+
+            <!-- Toggle between Register and Login -->
+            <p class="text-center">
+              <a href="javascript:void(0);" id="toggleLogin">Already have an account? Sign In</a>
+              <a href="javascript:void(0);" id="toggleRegister" style="display: none;">Don't have an account? Register
+                Now</a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <div class="pt-5">
+        <!-- END comment-list -->
+        <div class="comment-form-wrap pt-5">
+          <div class="line text-center">
+            <h3 class="title text-center mb-5" style="font-size: 20px; font-weight: bold;">Lorem, ipsum dolor.<li
+                class="fa fa-comment"></li>
+            </h3>
+          </div>
+
+
+          <form action="#" class="p-5 bg-light">
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="website">Company @</label>
+              <input type="url" class="form-control" id="website">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message !</label>
+              <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Comment" class="btn py-3 px-4 btn-primary">
+            </div>
+
+          </form>
+        </div>
+      </div>
